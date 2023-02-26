@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    
+    <!-- Script e CSS da página-->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <!-- Script e CSS da página-->
+    <title> Teste foda </title>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/2db99d343f.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+
+    <!-- AOS ANIMATE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS ANIMATE -->
+</head>
+    <body>
+
+        <main>
+            <article id="background" class="col-xl-12"></article>
+            <article class="col-12 col-sm-3 col-md-12 col-xl-8" id="ilustrate_article"> 
+                <div class="col-12 d-flex justify-content-center mt-2">
+                    <section class="col-10 col-md-10 col-xl-10" id="ilustration_calendar"> </section>
+                </div>
+            <section class="col-12 col-md-12 col-xl-12" id="mobile_wave"></section>
+            </article>
+
+           
+            <article class="col-12 col-sm-3 col-md-12 col-xl-4" id="cadastro_article">
+                
+                <div id="welcome_text">
+                    <p class="col-12 title_font"> Seja Bem Vindo(a) </p>
+                    <p class="col-12 subtitle_font"> Cadastre-se para Começar </p>
+                </div>
+                
+                <div class="justify-content-center col-12" id="test">
+                    <form action='../../../DailyWrite/controller/UsuarioController.php' method='post' name='checkCad'>
+                        <label id="error_01" class="col-12 error_font"> * Este nome de usuário já existe. </label>
+                        <input class="col-6" type="text" name="nome_cad_usuario" id="nome_cad_usuario" placeholder="Nome de Usuario:" required>
+                        
+                        <label id="error_02" class="col-12 error_font"> * Insira um Email Válido. </label>
+                        <input class="col-6" type="text" name="email_cad_usuario" id="email_cad_usuario" placeholder="Insira seu Email: "   required>
+                        
+                        <label id="error_03" class="col-12 error_font"> * Deve possuir no minimo 8 caracteres! </label>
+                        <label id="error_04" class="col-12 error_font"> * Deve possuir letras minusculas e maiusculas (a/Z) </label>
+                        <label id="error_05" class="col-12 error_font"> * Deve possuir um simbolo (!/@/#/$/%/&/*/) </label>
+                        <input class="col-6" type="password" name="senha_cad_usuario" id="senha_cad_usuario" min="8" placeholder="Insira sua Senha: "   required>
+                        
+                        <label id="error_06" class="col-12 error_font"> * A senha não confere, digite corretamente </label>
+                        <input class="col-6" type="password" name="senha_cad_usuario2" id="senha_cad_usuario2" min="8" placeholder="Confirme a Senha: "  required>
+                        <input class="col-6" type="text" name="token_cad_usuario" value="invalido" required hidden>
+                    </div>
+
+                    <div class="d-flex flex-column col-12" id="botoes">
+                        <button class="col-9" type="submit" id="cadastrar" name='cadastrar'> Criar Conta! </button>
+                </form>
+                        <a id="retornar_login"> Ja possui uma conta? Faça Login! </a>
+                    </div>
+            </article>
+
+            
+        </main>
+
+   
+        
+    </body>
+
+</html>
